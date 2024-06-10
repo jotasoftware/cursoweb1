@@ -1,7 +1,6 @@
-let tempC = parseFloat(prompt("Tempetatura em Graus Celsius"));
+let btn = document.getElementById('btnIdade');
 
-document.getElementById("celsius").innerHTML = "Temperatura em C: " + tempC;
-
-let tempF = (9/5 * tempC) + 32;
-
-document.getElementById("fahrenheit").innerHTML = "Temperatura em F: " + tempF;
+btn.addEventListener('click', () => {
+    let idade = document.getElementById('idade').value;
+    (idade>=18) ? alert("Voce e um adulto") : alert("Voce nao e um adulto")
+})
